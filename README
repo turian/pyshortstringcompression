@@ -1,0 +1,13 @@
+pyshortstringcompression
+========================
+
+Compress and decompress short strings.
+
+We precompute a Huffman tree (dictionary) for our corpus, and this corpus
+is not stored in any way in the compressed strings.
+
+WARNING: When decompressing, make sure you know what dictionary was used
+to compress the string, or you're hosed.
+
+For happy porting, the compression dictionary is given in a human-readable
+format. Pull requests should be directed at: https://github.com/antirez/smaz
